@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../" />
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar">
+        <div class="brand-tiitle"><div class="logo">TBA</div></div>
+        <div><h1>Главная страница</h1></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <div class="text-menu">Меню</div>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="./index.html">О нас</a></li>
+            <li><a href="./all_pages/listchannel.html">Список каналов</a></li>
+            <li><a href="./all_pages/partner.html">Партнеры</a></li>
+            <li><a href="./all_pages/unvr.html">УНВР</a></li>
+            <li><a href="./all_pages/register.html">Регистрация</a></li>
+            <li><a href="./all_pages/login.html">Вход</a></li>
+            <li><a href="./all_pages/home.html">Контакт</a></li>
+          </ul>
+        </div>
+      </nav>
+      <script>
+        const toggleButton =
+          document.getElementsByClassName("toggle-button")[0];
+        const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+        toggleButton.addEventListener("click", () => {
+          navbarLinks.classList.toggle("active");
+        });
+      </script>
+    </header>
+    <main class="container">
+      <h4>На сайте ведутся технические работы</h4>
+      <h3>
+        Смотреть онлайн IPTV - каналов Вы можете связаться с нами по телефону
+        +998910015115
+      </h3>
+    </main>
+    <footer class="container">
+      <div>
+        <h1>
+          <button><h1>📞+998(91) 001-51-15</h1></button>
+          <button>
+            <h1><a href="https://www.umail.uz">📧tbaiptv@umail.uz</a></h1>
+          </button>
+        </h1>
+      </div>
+      <span class="footer-text"
+        ><h6>
+          Все права защищены политика конфиденциальности © 2023 TBA
+        </h6></span
+      >
+    </footer>
+  </body>
+</html>
